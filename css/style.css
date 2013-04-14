@@ -1,0 +1,36 @@
+
+
+body, html {
+			font-family: Helvetica, Arial, sans-serif;
+			background-color:#444;
+			/*
+			background-image:-webkit-radial-gradient(center center, circle farthest-corner, #444 0%, #222 100%);
+			background-image:-moz-radial-gradient(center center, circle farthest-corner, #444 0%, #222 100%);
+			background-image:-o-radial-gradient(center center, circle farthest-corner, #444 0%, #222 100%);
+			background-image:radial-gradient(center center, circle farthest-corner, #444 0%, #222 100%);
+			*/
+			min-height:100%;
+			padding:1px 0 0 0;
+			margin:-1px 0 0 0;
+		}
+		html{
+			height:100%;
+		}
+		#cr-stage {
+			margin:0 auto;
+			font-family:"Overlock SC", Helvetica, Arial, sans-serif;
+			font-size:14px;
+			line-height:16px;
+			margin-top:30px;
+		}
+		#directions{
+			text-align:center;
+			margin-top:40px;
+			color:#888;
+			font-size:11px;
+			text-transform:uppercase;
+			letter-spacing:1px;
+		}
+		#directions p{
+			margin:.75em 0;
+		}

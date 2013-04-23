@@ -2,25 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9ff620b-a100-42a7-8111-1b5383e976ae" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/player.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/storm_clouds_bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/lightningboltcomponent.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/targetingcomponent.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/explosions.png" afterPath="$PROJECT_DIR$/img/explosions.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/objects.png" afterPath="$PROJECT_DIR$/img/objects.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/water.png" afterPath="$PROJECT_DIR$/img/water.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/init/init.js" afterPath="$PROJECT_DIR$/init/init.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scenes/level.js" afterPath="$PROJECT_DIR$/scenes/level.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prototypes/lightningbolt.js" afterPath="$PROJECT_DIR$/prototypes/lightningbolt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/lightningboltcomponent.js" afterPath="$PROJECT_DIR$/components/lightningboltcomponent.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prototypes/line.js" afterPath="$PROJECT_DIR$/prototypes/line.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scenes/loading.js" afterPath="$PROJECT_DIR$/scenes/loading.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/slidermovementcontrols.js" afterPath="$PROJECT_DIR$/components/slidermovementcontrols.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Electrosity.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1366712467590" ignored="false" />
+    <file path="/Dummy.txt" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1366714685463" ignored="false" />
     <file path="/index.html" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1366658513631" ignored="false" />
     <file path="/init.js" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1366674623160" ignored="false" />
     <file path="/style.css" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1366188745890" ignored="false" />
@@ -30,7 +18,7 @@
     <file path="/lightningboltcomponent.js" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1366713368947" ignored="false" />
     <file path="/targetingcomponent.js" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1366676093613" ignored="false" />
     <file path="/lightningbolt.js" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1366713336653" ignored="false" />
-    <file path="/line.js" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1366677308067" ignored="false" />
+    <file path="/line.js" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1366714770612" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +100,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="102" selection-start="1654" selection-end="1654" vertical-scroll-proportion="-17.583334">
+            <state line="41" column="102" selection-start="1654" selection-end="1654" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -121,7 +109,7 @@
       <file leaf-file-name="line.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/prototypes/line.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="15" selection-start="1736" selection-end="1736" vertical-scroll-proportion="0.0">
+            <state line="31" column="0" selection-start="993" selection-end="993" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -136,19 +124,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lightningboltcomponent.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/components/lightningboltcomponent.js">
+      <file leaf-file-name="level.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scenes/level.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="113" selection-start="574" selection-end="574" vertical-scroll-proportion="0.42525774">
+            <state line="54" column="35" selection-start="1965" selection-end="1965" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="level.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scenes/level.js">
+      <file leaf-file-name="lightningboltcomponent.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/components/lightningboltcomponent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="35" selection-start="1965" selection-end="1965" vertical-scroll-proportion="0.0">
+            <state line="22" column="113" selection-start="574" selection-end="574" vertical-scroll-proportion="0.42525774">
               <folding />
             </state>
           </provider>
@@ -177,10 +165,10 @@
         <option value="$PROJECT_DIR$/components/slidermovementcontrols.js" />
         <option value="$PROJECT_DIR$/components/targetingcomponent.js" />
         <option value="$PROJECT_DIR$/scenes/level.js" />
-        <option value="$PROJECT_DIR$/prototypes/line.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/prototypes/lightningbolt.js" />
         <option value="$PROJECT_DIR$/init/init.js" />
+        <option value="$PROJECT_DIR$/prototypes/line.js" />
         <option value="$PROJECT_DIR$/components/lightningboltcomponent.js" />
       </list>
     </option>
@@ -218,8 +206,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -324,6 +310,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -628,9 +616,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scenes/loading.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="9" selection-start="406" selection-end="406" vertical-scroll-proportion="0.32860824">
-          <folding />
-        </state>
+        <state line="17" column="9" selection-start="406" selection-end="406" vertical-scroll-proportion="0.32860824" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/components/slidermovementcontrols.js">
@@ -652,7 +638,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="102" selection-start="1654" selection-end="1654" vertical-scroll-proportion="-17.583334">
+        <state line="41" column="102" selection-start="1654" selection-end="1654" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -660,13 +646,6 @@
     <entry file="file://$PROJECT_DIR$/scenes/level.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="54" column="35" selection-start="1965" selection-end="1965" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prototypes/line.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="15" selection-start="1736" selection-end="1736" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -681,6 +660,13 @@
     <entry file="file://$PROJECT_DIR$/init/init.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="142" column="40" selection-start="5001" selection-end="5001" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prototypes/line.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="0" selection-start="993" selection-end="993" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>

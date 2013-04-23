@@ -30,26 +30,27 @@ Line.prototype.draw = function(ctx, color, alpha) {
 	var lightningSegment = new Image();
     lightningSegment.src =  Crafty.asset('LightningSegment');
 
+        if( color !== '#FFFFFF' ) { //the original image is already white, there is no need to tint
 
-	if( color !== '#FFFFFF' ) { //the original image is already white, there is no need to tint
+            var idx = Line.colorCacheIdx.indexOf( color );
 
-        var idx = Line.colorCacheIdx.indexOf( color );
+            if( idx === -1 ) {
 
-        if( idx === -1 ) {
 
-            idx = Line.colorCacheIdx.length;
-            Line.colorCacheIdx.push( color );
+                idx = Line.colorCacheIdx.length;
+                Line.colorCacheIdx.push( color );
 
-            Line.colorCache.push( tintImage( halfCircleImage, color ) );
-            Line.colorCache.push( tintImage( lightningSegment, color ) );
+                Line.colorCache.push( tintImage( halfCircleImage, color ) );
+                Line.colorCache.push( tintImage( lightningSegment, color ) );
+
+            }
+
+            //Because Javascript doesn't have assoc arrays, we are going to use two arrays, one for the indices, and the other for the values
+            halfCircleImage = Line.colorCache[idx * 2];
+            lightningSegment = Line.colorCache[idx * 2 + 1];
 
         }
 
-        //Because Javascript doesn't have assoc arrays, we are going to use two arrays, one for the indices, and the other for the values
-        halfCircleImage = Line.colorCache[idx * 2];
-        lightningSegment = Line.colorCache[idx * 2 + 1];
-
-    }
 
    	//Time to draw the lightning segment.
     ctx.save();

@@ -20,7 +20,7 @@ Crafty.c("LightningBolt", {
     },
 
     makeBolt: function(player) {
-            this._lightningBolt = new LightningBolt(player.getTargetSrcVec(), player.getTargetDestVec(), '#4545DD'); // #4545DD
+            this._lightningBolt = new LightningBolt(player.getTargetSrcVec(), player.getTargetDestVec(), '#FFFFFF'); // #4545DD
 
 
             this.bind('Draw', function(obj) {

@@ -2,13 +2,11 @@
 
 body, html {
 			font-family: Helvetica, Arial, sans-serif;
-			background-color:#444;
-			/*
-			background-image:-webkit-radial-gradient(center center, circle farthest-corner, #444 0%, #222 100%);
-			background-image:-moz-radial-gradient(center center, circle farthest-corner, #444 0%, #222 100%);
-			background-image:-o-radial-gradient(center center, circle farthest-corner, #444 0%, #222 100%);
-			background-image:radial-gradient(center center, circle farthest-corner, #444 0%, #222 100%);
-			*/
+            background: url(../img/storm_clouds_bg.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
 			min-height:100%;
 			padding:1px 0 0 0;
 			margin:-1px 0 0 0;
@@ -22,6 +20,7 @@ body, html {
 			font-size:14px;
 			line-height:16px;
 			margin-top:30px;
+            /*background-color:#444;*/
 		}
 		#directions{
 			text-align:center;

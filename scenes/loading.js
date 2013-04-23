@@ -15,7 +15,7 @@ Crafty.scene("loading", function() {
     });
 
       return Crafty.load(["img/sprites.png"], function() {
-        Crafty.scene("level");
+        loadLevel();
         return bindHashEvent();
       });
     

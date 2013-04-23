@@ -11,7 +11,7 @@ var Line = function(vec_src, vec_dest, thickness) {
 	this.vec_src = vec_src;
 	this.vec_dest = vec_dest;
 	this.thickness = typeof thickness !== 'undefined' ? thickness : 1;
-	this.scale = thickness/8;
+	this.scale = this.thickness/8;
 };
 
 //Static Variables
@@ -19,16 +19,16 @@ Line.colorCache = [];
 Line.colorCacheIdx = [];
 
 //Prototype Methods
-Line.prototype.draw = function(ctx, color) {
-	
-	var tangent = this.vec_dest.subtract(this.vec_src);
-	var rotation = this.vec_dest.angleTo(this.vec_src);
-	var capOrigin = new Crafty.math.Vector2D(HALFCIRCLE_W, HALFCIRCLE_H/2);
-	var middleOrigin = new Crafty.math.Vector2D(0, LIGHTSMGT_H/2);
+Line.prototype.draw = function(ctx, color, alpha) {
+
+	var tangent = new Crafty.math.Vector2D(this.vec_dest.clone().subtract(this.vec_src));
+	var rotation = this.vec_src.angleTo(this.vec_dest);
 	var color = typeof color !== 'undefined' ? color : '#FFFFFF';
 	var middleScale = new Crafty.math.Vector2D(tangent.magnitude(), this.scale);
-	var halfCircleImage = Crafty.assets('HalfCircle');
-	var lightningSegment = Crafty.assets('LightningSegment');
+	var halfCircleImage = new Image();
+    halfCircleImage.src = Crafty.asset('HalfCircle');
+	var lightningSegment = new Image();
+    lightningSegment.src =  Crafty.asset('LightningSegment');
 
 
 	if( color !== '#FFFFFF' ) { //the original image is already white, there is no need to tint
@@ -40,8 +40,8 @@ Line.prototype.draw = function(ctx, color) {
             idx = Line.colorCacheIdx.length;
             Line.colorCacheIdx.push( color );
 
-            Line.colorCache.push( tintImage( Crafty.assets('HalfCircle'), color ) );
-            Line.colorCache.push( tintImage( Crafty.assets('LightningSegment'), color ) );
+            Line.colorCache.push( tintImage( halfCircleImage, color ) );
+            Line.colorCache.push( tintImage( lightningSegment, color ) );
 
         }
 
@@ -54,34 +54,28 @@ Line.prototype.draw = function(ctx, color) {
    	//Time to draw the lightning segment.
     ctx.save();
 
-    ctx.translate( vec_src.x, vec_src.y );
+    ctx.translate( this.vec_src.x, this.vec_src.y );
     ctx.rotate( rotation );
 
     //draw the main line segment
     ctx.scale( middleScale.x, middleScale.y );
-    ctx.drawImage( lightningSegment, 0, -( LIGHTSMGT_H / 2 ) );
+    ctx.drawImage( lightningSegment, 0, -( lightningSegment.height / 2 ) );
 
     //draw the left circle
     ctx.scale( 1 / middleScale.x, 1 / middleScale.y ); //revert the scale
     ctx.scale( this.scale, this.scale );
-    ctx.drawImage( halfCircleImage, -( HALFCIRCLE_W ), -( HALFCIRCLE_H / 2 ) );
+    ctx.drawImage( halfCircleImage, -( halfCircleImage.width ), -( halfCircleImage.height / 2 ) );
 
     //draw the right circle
     ctx.scale( 1 / this.scale, 1 / this.scale );
     ctx.rotate( - rotation ); //revert rotation, if we dont do that, translate will give us an wrong result.
-    ctx.translate( vec_dest.x - vec_src.x, vec_dest.y - vec_src.y );
-    ctx.rotate( rotation + Math.PI ); //rotate for the same amout + 180degrees
+    ctx.translate( this.vec_dest.x - this.vec_src.x, this.vec_dest.y - this.vec_src.y );
+    ctx.rotate( rotation + Math.PI); //rotate for the same amount + 180degrees
     ctx.scale( this.scale, this.scale );
-    ctx.drawImage( halfCircleImage, -( HALFCIRCLE_W ), -( HALFCIRCLE_H / 2 ) );
+    ctx.drawImage( halfCircleImage, -( halfCircleImage.width ), -( halfCircleImage.height / 2 ) );
 
     ctx.restore();
 
 };
 
-//Entity Factory to create lightningbolt objects
-
-//Entity Factory creates entity of certain size - or maybe prototype wrapper as in Q
-
-//Then in draw method of Lightning bolt entity loop to create Line objects
-//(with custom Draw function in each line using passed context)
 

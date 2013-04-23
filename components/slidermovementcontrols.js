@@ -40,6 +40,7 @@ Crafty.c("SliderMovementControls", {
       });
       this.collision();
       this.onHit("Solid", function() {
+
         if (move.right) {
           this.attr({
             x: this.x - speed
@@ -58,7 +59,7 @@ Crafty.c("SliderMovementControls", {
           });
         }
         this.StopSlide();
-        return this.trigger('EndMove');
+        return Crafty.trigger('EndMove');
       });
       this.onHit("exit", function() {
         move = this.__move;
@@ -81,7 +82,7 @@ Crafty.c("SliderMovementControls", {
             move.down = true;
           }
           if (move.right || move.left || move.up || move.down) {
-            return this.trigger('StartMove');
+            return Crafty.trigger('StartMove');
           }
         }
       });

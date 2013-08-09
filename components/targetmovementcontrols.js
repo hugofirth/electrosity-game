@@ -1,21 +1,18 @@
-Crafty.c("SliderMovementControls", {
-    __move: {
+Crafty.c("TargetMovementControls", {
+    _move: {
       left: false,
       right: false,
       up: false,
       down: false
     },
-    StopSlide: function() {
+    StopMoving: function() {
       var move;
-      move = this.__move;
+      move = this._move;
       return move.right = move.left = move.up = move.down = false;
     },
-    SliderMovementControls: function(speed) {
+    TargetMovementControls: function(speed) {
       var move;
-      if (speed == null) {
-        speed = 4;
-      }
-      move = this.__move;
+      move = this._move;
       this.bind('EnterFrame', function() {
         if (move.right || move.left || move.up || move.down) {
           this.trigger('Move');
@@ -58,27 +55,42 @@ Crafty.c("SliderMovementControls", {
             y: this.y - speed
           });
         }
-        this.StopSlide();
+        this.StopMoving();
         return Crafty.trigger('EndMove');
       });
-      this.onHit("exit", function() {
-        move = this.__move;
-        return this.StopSlide;
+
+      //Address non standard Collisions (Water, Goal, Key)
+      this.onHit("goal", function() {
+        move = this._move;
+        this.StopMoving();
+        Crafty.trigger('EndMove');
+        return Crafty.trigger('GoalFound');
       });
-      return this.BindKeyControls();
+
+      this.onHit("water", function() {
+          move = this._move;
+          this.StopMoving();
+          Crafty.trigger('EndMove');
+          return Crafty.trigger('Died');
+      });
+
+      this.onHit("key", function() {
+        return Crafty.trigger('KeyFound');
+      })
+      return this.BindControls();
     },
-    BindKeyControls: function() {
+    BindControls: function() {
       var move;
-      move = this.__move;
-      return this.bind('KeyDown', function(e) {
+      move = this._move;
+      return this.bind('KeyDown', function(key) {
         if (!(move.right || move.left || move.up || move.down)) {
-          if (e.keyCode === Crafty.keys.RIGHT_ARROW || e.keyCode === Crafty.keys.D) {
+          if (key.keyCode === Crafty.keys.RIGHT_ARROW || key.keyCode === Crafty.keys.D) {
             move.right = true;
-          } else if (e.keyCode === Crafty.keys.LEFT_ARROW || e.keyCode === Crafty.keys.A) {
+          } else if (key.keyCode === Crafty.keys.LEFT_ARROW || key.keyCode === Crafty.keys.A) {
             move.left = true;
-          } else if (e.keyCode === Crafty.keys.UP_ARROW || e.keyCode === Crafty.keys.W) {
+          } else if (key.keyCode === Crafty.keys.UP_ARROW || key.keyCode === Crafty.keys.W) {
             move.up = true;
-          } else if (e.keyCode === Crafty.keys.DOWN_ARROW || e.keyCode === Crafty.keys.S) {
+          } else if (key.keyCode === Crafty.keys.DOWN_ARROW || key.keyCode === Crafty.keys.S) {
             move.down = true;
           }
           if (move.right || move.left || move.up || move.down) {

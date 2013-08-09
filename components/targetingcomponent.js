@@ -13,9 +13,10 @@ Crafty.c("Targeting", {
     _targetSrcVec: null,
 
     init: function() {
-        this._targetEntity = Crafty.e("2D, Canvas, empty, controls, Collision, SliderMovementControls");
+        this._targetEntity = Crafty.e("2D, Canvas, empty, controls, Collision, TargetMovementControls");
         this._targetEntity.attr({x: this.x*TILE_W, y: this.y*TILE_H});
-        this._targetEntity.SliderMovementControls(16); //TODO: Replace SliderMovementControls with custom component
+        this._targetEntity.TargetMovementControls(16);
+
 
         this.bind("StartMove", function() {
             this._targetSrcVec = new Crafty.math.Vector2D((this._targetEntity.x+(TILE_W/2)), (this._targetEntity.y+(TILE_H/2)));

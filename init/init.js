@@ -5,10 +5,9 @@ window.onload = (function() {
 	var TILE_W = window.TILE_W = 16;
 	var WORLD_H = window.WORLD_H = 21;
 	var WORLD_W = window.WORLD_W = 41;
-	var VIEWPORT_H = window.VIEWPORT_H = 672;
-	var VIEWPORT_W = window.VIEWPORT_W = 1312;
+	var VIEWPORT_H = window.VIEWPORT_H = 336;
+	var VIEWPORT_W = window.VIEWPORT_W = 656;
 	var LEVEL = window.LEVEL = null;
-    var PAUSED = window.PAUSED = false;
 
 	//Globals for Lightning effect as Crafty Art class lacking
 	var HALFCIRCLE_H = window.HALFCIRCLE_H = 113;
@@ -18,11 +17,25 @@ window.onload = (function() {
 
 	//Global Functions 
 	var Rand = window.Rand = function( from, to ) {
-        return ( Math.random() * ( to - from + 1 ) + from ) | 0; //generate lookup table beforehand?
+        return ( Math.random() * ( to - from + 1 ) + from ) | 0;
     };
 
-    var loadLevel = window.loadLevel = function() {
+    var incrementLevel = window.incrementLevel = function() {
+        var oldHash = window.location.hash.substring(1);
+        oldHash = ((typeof oldHash !== 'undefined') && (oldHash)) ? oldHash : 0;
+        var newHash = parseInt(oldHash)+1;
+        if(newHash<=9){
+            window.location.hash = '#' + newHash;
+        } else {
+            Crafty.scene('victorious');
+        }
+    }
 
+    var loadLevel = window.loadLevel = function() {
+        /**
+         * Some levels not of original design.
+         * Permission for usage requested in all cases.
+         */
 	    var hash = window.location.hash.substring(1);
         var level_no = ((typeof hash !== 'undefined') && (hash)) ? hash : 0;
         $.ajax({
@@ -36,12 +49,76 @@ window.onload = (function() {
 
   	};
 
-    var pauseLevel = window.pauseGame = function() {
-          //TODO: Display Hidden div over the top
+    var pauseLevel = window.pauseGame = function(key) {
+        if (key.keyCode === Crafty.keys.P) {
+
+            if(!Crafty.isPaused()){
+                var pause = Crafty.e("2D, DOM, Text, Pause, Delay")
+                    .attr({
+                        w: TILE_W * WORLD_W,
+                        h: (TILE_H * WORLD_H)/2,
+                        x: 0,
+                        y: 0,
+                        alpha: 0.6
+                    })
+                    .text("Paused")
+                    .css({
+                        "padding-top": (TILE_H * WORLD_H)/2 + "px",
+                        "text-align": "center",
+                        "color": "#FFF",
+                        "background-color": "#000",
+                        "font-family": "Nothing You Could Do",
+                        "font-size": "24px"
+                    })
+                    .delay(function(){Crafty.pause();}, 1);
+                Crafty.audio.pause('ambience');
+                Crafty.audio.pause('ambience_spark');
+                Crafty.audio.play('music', -1);
+            } else {
+                Crafty.audio.stop('music');
+                Crafty.audio.unpause('ambience');
+                Crafty.audio.unpause('ambience_spark');
+                Crafty('Pause').destroy();
+                Crafty.pause();
+            }
+
+
+        }
     };
 
-    var restartLevel = window.restartLevel = function() {
-         //TODO: Call level scene again
+    var muteLevel = window.muteLevel = function(key) {
+        if (key.keyCode === Crafty.keys.M) {
+
+           Crafty.audio.toggleMute();
+           if(Crafty.audio.muted) {
+               var mute = Crafty.e("2D, DOM, Text, Mute, Persist")
+                    .attr({
+                        w: TILE_W *5,
+                        h: 18,
+                        x: 0,
+                        y: 0,
+                        alpha: 0.6
+                    })
+                    .text("Muted")
+                    .css({
+                        "padding-top": "5px",
+                        "text-align": "center",
+                        "color": "#FFF",
+                        "background-color": "#000",
+                        "font-family": "Nothing You Could Do",
+                        "font-size": "18px"
+                    });
+           } else {
+                Crafty('Mute').destroy();
+           }
+        }
+    };
+
+    var restartLevel = window.restartLevel = function(key) {
+        if (key.keyCode === Crafty.keys.R) {
+            unbindRestartEvent();
+            Crafty.scene('level');
+        }
     };
 
     //Global functions for the binding and unbinding of event and keyboard listeners
@@ -54,19 +131,39 @@ window.onload = (function() {
   	};
 
     var bindPauseEvent = window.bindPauseEvent = function() {
-        //TODO: add keyboard listener for pause (p)
+        Crafty.bind('KeyUp', pauseLevel);
     };
 
     var unbindPauseEvent = window.unbindPauseEvent = function() {
-        //TODO: remove keyboard listener for pause
+        Crafty.unbind('KeyUp', pauseLevel);
     };
 
     var bindRestartEvent = window.bindRestartEvent = function() {
-        //TODO: add keyboard listener for restart (r)
+        Crafty.bind('KeyUp', restartLevel);
     };
 
     var unbindRestartEvent = window.unbindRestartEvent = function() {
-        //TODO: remove keyboard listener for restart
+        Crafty.unbind('KeyUp', restartLevel);
+    };
+
+    var bindMuteEvent = window.bindMuteEvent = function() {
+        Crafty.bind('KeyUp', muteLevel);
+    };
+
+    var unbindMuteEvent = window.unbindMuteEvent = function() {
+        Crafty.unbind('KeyUp', muteLevel);
+    };
+
+    var levelCleanUp = window.levelCleanUp = function() {
+        unbindPauseEvent();
+        unbindRestartEvent();
+        unbindMuteEvent();
+    };
+
+    var levelSetup = window.levelSetup = function() {
+        bindPauseEvent();
+        bindRestartEvent();
+        bindMuteEvent();
     };
 
   	var generateWorld = window.generateWorld = function(map) {
@@ -85,28 +182,37 @@ window.onload = (function() {
 	        switch (cell) {
 	          case "0":
                 var tile = Crafty.e("2D, Canvas, floor");
+                tile.attr(coords);
             	break;
 	          case "1":
 	            var tile = Crafty.e("2D, Canvas, wall, Solid");
+                tile.attr(coords);
 	            break;
 	          case "2":
-	            var tile = Crafty.e("2D, Canvas, empty, exit");
+	            var tile = Crafty.e("2D, Canvas, openhatch, goal");
+                tile.attr(coords);
 	            break;
 	          case "3":
-	            var tile = Crafty.e("2D, Canvas, key");
+                var floortile = Crafty.e("2D, Canvas, floor");
+                floortile.attr(coords);
+	            var tile = Crafty.e("2D, Canvas, key, key, SpriteAnimation");
+                tile.attr(coords);
+                tile.animate("bounce", 0, 0, 6);
+                tile.animate("bounce", 40, -1);
 	            break;
 	          case "4":
-	            var tile = Crafty.e("2D, Canvas, door, Solid");
+	            var tile = Crafty.e("2D, Canvas, closedhatch, Solid");
+                tile.attr(coords);
 	            break;
 	          case "5":
-	            var tile = Crafty.e("2D, Canvas, water1, SpriteAnimation");
+	            var tile = Crafty.e("2D, Canvas, water1, water, SpriteAnimation");
+                tile.attr(coords);
                 tile.animate("current", 0, 0, 2);
                 tile.animate("current", 80, -1);
 	            break;
 	          default:
-	            var tile = Crafty.e("2D, DOM, pink");
+	            break;
 	        }
-	        tile.attr(coords);
 	        x++;
 	      }
 	      x = 0;
@@ -150,7 +256,7 @@ window.onload = (function() {
 	Crafty.init();
 	//Initialise Crafty's Canvas Element with a set size. CSS rules define positioning
 	Crafty.canvas.init();
-	Crafty.viewport.init(VIEWPORT_H, VIEWPORT_W);
+	Crafty.viewport.init(VIEWPORT_W, VIEWPORT_H);
 	//Disable clampToEntities for performance reasons.
 	Crafty.viewport.clampToEntities = false;
 
@@ -159,8 +265,12 @@ window.onload = (function() {
 		empty: [11,1],
 		floor: [6,1],
 		wall : [1,0],
-		key : [1,1]
+		openhatch : [1,1],
+        closedhatch: [2,1]
 	});
+    Crafty.sprite(TILE_W, TILE_H, "img/key.png", {
+       key:[0,0]
+    });
 	//Declare Crafty Water Sprites
 	Crafty.sprite(TILE_W, TILE_H, "img/water.png", {
 		water1: [0,0],
@@ -171,20 +281,28 @@ window.onload = (function() {
 	});
 	//Declare Crafty Explosion Sprites
 	Crafty.sprite(TILE_W, TILE_H, "img/explosions.png", {
-		explosion1: [0,0],
-		explosion2: [1,0],
-		explosion3: [2,0],
-		explosion4: [3,0],
-		explosion5: [4,0],
-		explosion6: [5,0],
-		explosion7: [6,0]
+		explosiondust: [0,0]
 	});
+    Crafty.sprite(TILE_W, TILE_H, "img/explosions2.png", {
+        explosionsparks: [0,0]
+    });
+
     Crafty.sprite(TILE_W, TILE_H, "img/player.png", {
         player1: [0,0],
         player2: [1,0],
         player3: [2,0]
-    })
+    });
 
+    //Load audio assets
+    Crafty.audio.add("spark", "sounds/spark.ogg");
+    Crafty.audio.add("spark2", "sounds/spark2.ogg");
+    Crafty.audio.add("ambience", "sounds/ambience.ogg");
+    Crafty.audio.add("ambience_spark", "sounds/ambience_spark.ogg");
+    Crafty.audio.add("music", "sounds/music.ogg");
+    Crafty.audio.add("door_open", "sounds/door_open.ogg");
+
+
+    Crafty.audio.play("music");
 
 	//Load and cache lightning bolt assets for custom drawing
 	Crafty.asset('LightningSegment', 'img/lightning-segment-2.png');

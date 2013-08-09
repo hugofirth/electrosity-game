@@ -1,0 +1,4 @@
+#Audio
+AddType audio/ogg .ogg
+AddType audio/mpeg .mp3
+AddType audio/wav .wav

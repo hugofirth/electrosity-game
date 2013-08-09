@@ -1,7 +1,8 @@
 
 
 body, html {
-			font-family: Helvetica, Arial, sans-serif;
+            font-family: 'Helvetica Neue' sans-serif;
+            font-size: 16px;
             background: url(../img/storm_clouds_bg.jpg) no-repeat center center fixed;
             -webkit-background-size: cover;
             -moz-background-size: cover;
@@ -11,25 +12,117 @@ body, html {
 			padding:1px 0 0 0;
 			margin:-1px 0 0 0;
 		}
-		html{
-			height:100%;
-		}
-		#cr-stage {
-			margin:0 auto;
-			font-family:"Overlock SC", Helvetica, Arial, sans-serif;
-			font-size:14px;
-			line-height:16px;
-			margin-top:30px;
-            /*background-color:#444;*/
-		}
-		#directions{
-			text-align:center;
-			margin-top:40px;
-			color:#888;
-			font-size:11px;
-			text-transform:uppercase;
-			letter-spacing:1px;
-		}
-		#directions p{
-			margin:.75em 0;
-		}
+html{
+	height:100%;
+}
+
+/* TITLE */
+
+.titleBar {
+    margin-top: 20px;
+}
+
+#title, .titlelink {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 36px;
+    color: #FFFFFF;
+    text-decoration: none;
+
+}
+
+ a.titlelink:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 32px;
+    margin-left: 38px;
+}
+
+.titlelink {
+    margin-left: 40px;
+    font-size: 28px;
+}
+
+/* Canvas */
+
+#cr-stage {
+    position:absolute;
+    height: 336px;
+    width: 656px;
+    left: 50%;
+    margin-left: -328px;
+    top: 50%;
+    margin-top: 168px;
+	font-size:14px;
+	line-height:16px;
+    -moz-box-shadow: 8px 8px 5px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 8px 8px 5px rgba(0,0,0,0.5);
+    box-shadow: 8px 8px 5px rgba(0,0,0,0.5);
+}
+
+.wrapper {
+    position: relative;
+}
+
+#controls {
+    position: absolute;
+    left: 100px;
+    top: 50%;
+    margin-top: 168px;
+    height: 336px;
+    color: #ffffff;
+    font-family: 'Nothing You Could Do', cursive;
+}
+
+#controls h2 {
+    font-family: inherit;
+    font-size: 32px;
+    margin-bottom: 48px;
+}
+
+#controls p {
+    margin-bottom: 36px;
+}
+
+.key {
+    -moz-border-radius: 10%;
+    -webkit-border-radius: 10%;
+    border-radius: 10%;
+    border: 2px solid #ffffff;
+    padding: 8px 14px;
+    font-size: 32px;
+    margin-bottom: -80px;
+    font-family: "Lucida Console", Monaco, monospace;
+    text-align: center;
+    color: #ffffff;
+}
+
+.carousel {
+    margin: 0 auto;
+}
+
+.levellist {
+    margin: 0 auto;
+    margin-top: 100px;
+    max-width: 82%;
+}
+
+.levellist ul li {
+    display: inline-block !important;
+    position: relative;
+}
+
+.levellist ul li div.caption {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 5px;
+    background: #333;
+    background: rgba(0,0,0,0.75);
+    color: #ffffff;
+    height: 15%;
+    width: 187px;
+    font-size: 14px;
+}
+
+

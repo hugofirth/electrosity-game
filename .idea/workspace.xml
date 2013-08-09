@@ -2,23 +2,86 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9ff620b-a100-42a7-8111-1b5383e976ae" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/blink.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotcloud.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scenes/levelend.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/levels.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scenes/start.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tutorial.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/sprites.png" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/components/slidermovementcontrols.js" afterPath="$PROJECT_DIR$/components/targetmovementcontrols.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/init/init.js" afterPath="$PROJECT_DIR$/init/init.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scenes/level.js" afterPath="$PROJECT_DIR$/scenes/level.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/lightningboltcomponent.js" afterPath="$PROJECT_DIR$/components/lightningboltcomponent.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prototypes/line.js" afterPath="$PROJECT_DIR$/prototypes/line.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scenes/loading.js" afterPath="$PROJECT_DIR$/scenes/loading.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/targetingcomponent.js" afterPath="$PROJECT_DIR$/components/targetingcomponent.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scenes/victorious.js" afterPath="$PROJECT_DIR$/scenes/victorious.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Electrosity.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1366714685463" ignored="false" />
-    <file path="/index.html" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1366658513631" ignored="false" />
-    <file path="/init.js" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1366674623160" ignored="false" />
-    <file path="/style.css" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1366188745890" ignored="false" />
-    <file path="/level.js" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1366681438408" ignored="false" />
-    <file path="/slidermovementcontrols.js" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1366638730203" ignored="false" />
-    <file path="/loading.js" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1366582213239" ignored="false" />
+    <file path="/Dummy.txt" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367501779987" ignored="false" />
+    <file path="/index.html" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367358448200" ignored="false" />
+    <file path="/init.js" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367362253992" ignored="false" />
+    <file path="/style.css" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367370879444" ignored="false" />
+    <file path="/level.js" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367364021840" ignored="false" />
+    <file path="/slidermovementcontrols.js" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367362978214" ignored="false" />
+    <file path="/loading.js" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367092790759" ignored="false" />
     <file path="/lightningboltcomponent.js" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1366713368947" ignored="false" />
-    <file path="/targetingcomponent.js" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1366676093613" ignored="false" />
+    <file path="/targetingcomponent.js" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367363103788" ignored="false" />
     <file path="/lightningbolt.js" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1366713336653" ignored="false" />
     <file path="/line.js" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1366714770612" ignored="false" />
+    <file path="/loadingLevel.js" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1366768270197" ignored="false" />
+    <file path="/dummy.xml" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367370483675" ignored="false" />
+    <file path="/.htaccess" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1366802131618" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/jsf_core.tld" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367022439023" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/jstl-core.taglib.xml" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367022439023" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/facelets_jsf_core.taglib.xml" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367022439023" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JBoss/lib/jbossIntegration.jar!/descriptors/jboss-deployment-structure-1_1.xsd" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367022439023" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JBoss/lib/jbossIntegration.jar!/descriptors/jboss-deployment-structure-1_0.xsd" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367022439024" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/XMLSchema-instance.xsd" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367022439024" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/relaxng.rng" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367022439024" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/xhtml1-transitional.xsd" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367022439024" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/html_basic.tld" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367022439024" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/xhtml1-strict.xsd" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367022439024" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/xml.xsd" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367022439024" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/html_basic_2_0.tld" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367022439024" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/jsf-ui.tld" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367022439024" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/composite.tld" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367022439024" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/XMLSchema.xsd" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367022439024" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/ui.taglib.xml" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367022439024" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/xinclude.xsd" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367022439024" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/javaee_web_services_1_2.xsd" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367022439025" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/xslt-1_0.xsd" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367022439025" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/html_basic.taglib.xml" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367022439025" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/xslt-2_0.xsd" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367022439025" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/web-facesconfig_1_2.xsd" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367022439025" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/xml.xsd" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367022439025" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/web-facesconfig_1_1.xsd" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367022439025" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/jsf-ui-2_0.tld" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367022439025" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/xhtml1-frameset.xsd" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367022439025" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/web-facesconfig_2_0.xsd" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367022439025" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/jstl-fn.taglib.xml" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367022439025" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/jsf_core_2_0.tld" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367022439025" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/jstl.core.facelets.tld" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367022439026" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/jstl.fn.facelets.tld" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367022439026" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/catalog.xsd" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367022439026" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/javaee_5.xsd" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367022439026" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/html5/xhtml5.xsd" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367022439026" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/composite.taglib.xml" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367022439026" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/javaee_web_services_client_1_2.xsd" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367022439026" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/web-facelettaglibrary_2_0.xsd" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367022439026" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/mojarra_ext.taglib.xml" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367022439026" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/web-facesuicomponent_2_0.xsd" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367022439026" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/web-partialresponse_2_0.xsd" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367022439026" ignored="false" />
+    <file path="/blink.js" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367076117712" ignored="false" />
+    <file path="/pause.js" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367082687775" ignored="false" />
+    <file path="/victorious.js" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367092067482" ignored="false" />
+    <file path="/start.js" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367099976514" ignored="false" />
+    <file path="/tutorial.html" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367393919585" ignored="false" />
+    <file path="/levels.html" changelist="d9ff620b-a100-42a7-8111-1b5383e976ae" time="1367370763845" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,46 +142,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="lightningbolt.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/prototypes/lightningbolt.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="40" selection-start="1997" selection-end="1997" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="init.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/init/init.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="142" column="40" selection-start="5001" selection-end="5001" vertical-scroll-proportion="0.0">
+            <state line="36" column="55" selection-start="1253" selection-end="1253" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="start.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scenes/start.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="102" selection-start="1654" selection-end="1654" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="line.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/prototypes/line.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="0" selection-start="993" selection-end="993" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="targetingcomponent.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/targetingcomponent.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="126" selection-start="932" selection-end="932" vertical-scroll-proportion="0.0">
+            <state line="25" column="35" selection-start="702" selection-end="702" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -127,16 +163,52 @@
       <file leaf-file-name="level.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scenes/level.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="35" selection-start="1965" selection-end="1965" vertical-scroll-proportion="0.0">
+            <state line="139" column="53" selection-start="4748" selection-end="4748" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lightningboltcomponent.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/components/lightningboltcomponent.js">
+      <file leaf-file-name="victorious.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scenes/victorious.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="113" selection-start="574" selection-end="574" vertical-scroll-proportion="0.42525774">
+            <state line="1" column="30" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="123" column="14" selection-start="2220" selection-end="2220" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loading.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scenes/loading.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="45" selection-start="624" selection-end="624" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tutorial.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tutorial.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="111" selection-start="2021" selection-end="2021" vertical-scroll-proportion="-0.11637348">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="levels.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/levels.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="107" selection-start="1276" selection-end="1276" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -160,16 +232,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/scenes/levelend.js" />
+        <option value="$PROJECT_DIR$/components/lightningboltcomponent.js" />
+        <option value="$PROJECT_DIR$/components/blink.js" />
+        <option value="$PROJECT_DIR$/components/pause.js" />
         <option value="$PROJECT_DIR$/scenes/loading.js" />
+        <option value="$PROJECT_DIR$/scenes/victorious.js" />
+        <option value="$PROJECT_DIR$/scenes/start.js" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/components/slidermovementcontrols.js" />
         <option value="$PROJECT_DIR$/components/targetingcomponent.js" />
-        <option value="$PROJECT_DIR$/scenes/level.js" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/prototypes/lightningbolt.js" />
+        <option value="$PROJECT_DIR$/components/targetmovementcontrols.js" />
         <option value="$PROJECT_DIR$/init/init.js" />
-        <option value="$PROJECT_DIR$/prototypes/line.js" />
-        <option value="$PROJECT_DIR$/components/lightningboltcomponent.js" />
+        <option value="$PROJECT_DIR$/scenes/level.js" />
+        <option value="$PROJECT_DIR$/levels.html" />
+        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/tutorial.html" />
       </list>
     </option>
   </component>
@@ -206,6 +284,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -234,76 +313,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="scenes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Electrosity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Electrosity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="prototypes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Electrosity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Electrosity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="init" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Electrosity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Electrosity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Electrosity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Electrosity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Electrosity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Electrosity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -311,15 +320,15 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="options.lastSelected" value="preferences.pluginManager" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/magicpreview.png" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -331,6 +340,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/crafty" />
       <recent name="$PROJECT_DIR$/img" />
     </key>
   </component>
@@ -347,6 +360,19 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -377,19 +403,6 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -403,6 +416,13 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -424,13 +444,6 @@
       </option>
       <envs />
       <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
-      <JSDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSDebuggerConfigurationSettings>
       <method />
     </configuration>
     <list size="0" />
@@ -510,7 +523,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -582,9 +595,45 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/img/explosions.png">
+    <entry file="file://$PROJECT_DIR$/img/tutorial_3.png">
       <provider selected="true" editor-type-id="images">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/tutorial_4.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/targetingcomponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="87" selection-start="459" selection-end="459" vertical-scroll-proportion="0.30927834" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="17" selection-start="1140" selection-end="1140" vertical-scroll-proportion="-0.083333336" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scenes/loading.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="45" selection-start="624" selection-end="624" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scenes/start.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="35" selection-start="702" selection-end="702" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scenes/victorious.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="30" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/img/objects.png">
@@ -592,14 +641,32 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/magicpreview.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/init/init.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="55" selection-start="1253" selection-end="1253" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/game.js">
+    <entry file="file://$PROJECT_DIR$/scenes/level.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="139" column="53" selection-start="4748" selection-end="4748" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/levels.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="107" selection-start="1276" selection-end="1276" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="123" column="14" selection-start="2220" selection-end="2220" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -607,73 +674,21 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="11" selection-start="751" selection-end="751" vertical-scroll-proportion="0.6374502">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scenes/loading.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="9" selection-start="406" selection-end="406" vertical-scroll-proportion="0.32860824" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/slidermovementcontrols.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="64" selection-start="2430" selection-end="2430" vertical-scroll-proportion="0.76095617" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Notes.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="52" selection-start="1097" selection-end="1097" vertical-scroll-proportion="0.46391752" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/targetingcomponent.js">
+    <entry file="file://$PROJECT_DIR$/components/targetmovementcontrols.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="126" selection-start="932" selection-end="932" vertical-scroll-proportion="0.0">
+        <state line="70" column="22" selection-start="1782" selection-end="1782" vertical-scroll-proportion="0.28479382">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/tutorial.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="102" selection-start="1654" selection-end="1654" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scenes/level.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="35" selection-start="1965" selection-end="1965" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prototypes/lightningbolt.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="40" selection-start="1997" selection-end="1997" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/init/init.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="40" selection-start="5001" selection-end="5001" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prototypes/line.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="993" selection-end="993" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/lightningboltcomponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="113" selection-start="574" selection-end="574" vertical-scroll-proportion="0.42525774">
+        <state line="43" column="111" selection-start="2021" selection-end="2021" vertical-scroll-proportion="-0.11637348">
           <folding />
         </state>
       </provider>

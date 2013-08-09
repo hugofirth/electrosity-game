@@ -7,52 +7,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here|Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.css">
 
+
 </head>
-<body class="container">
-    <header>
-        <div class="navbar navbar-inverse navbar-static-top">
-                <div class="navbar-inner">
-                    <div class="container">
-                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </a>
-                        <a class="brand" href="#">Electrosity</a>
-
-                        <div class="nav-collapse collapse">
-
-                        </div>
-                        <!--/.nav-collapse -->
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="container">
+                <div class="row-fluid titleBar">
+                    <div class="span4 offset2">
+                        <a href="/" id="title">Electrosity</a>
+                    </div>
+                    <div class="span6">
+                        <div class="span4"><a href="/tutorial.html" class="titlelink">Tutorial</a></div>
+                        <div class="span4"><a href="/levels.html" class="titlelink" >Levels</a></div>
                     </div>
                 </div>
+            </div>
+
+        </header>
+
+        <div id="controls">
+            <h2>Controls</h2>
+            <p><span class="key">M</span> - toggle mute</p>
+
+            <p><span class="key">P</span> - toggle pause</p>
+
+            <p><span class="key">R</span> - restart level</p>
+            <h2>Movement</h2>
+
+            <p><span class="key">W</span><span class="key">A</span><span class="key">S</span><span class="key">D</span></p>
         </div>
-    </header>
 
 
 
-    <footer>
-        <!-- Load jQuery -->
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-        <!-- Load the Crafty Library -->
-        <!-- http://craftyjs.com/release/0.5.3/crafty.js -->
-        <script type="text/javascript" src="http://craftyjs.com/release/0.5.3/crafty-min.js"></script>
-        <!-- Load any custom prototypes -->
-        <script type="text/javascript" src="prototypes/line.js"></script>
-        <script type="text/javascript" src="prototypes/lightningbolt.js"></script>
-        <!-- Initialise -->
-        <script type="text/javascript" src="init/init.js"></script>
-        <!-- Load the custom components -->
-        <script type="text/javascript" src="components/slidermovementcontrols.js"></script>
-        <script type="text/javascript" src="components/targetingcomponent.js"></script>
-        <script type="text/javascript" src="components/lightningboltcomponent.js"></script>
-        <!-- Load the scenes -->
-        <script type="text/javascript" src="scenes/level.js"></script>
-        <script type="text/javascript" src="scenes/loading.js"></script>
-        <!-- Start The Game -->
-    </footer>
+        <footer>
+            <!-- Load jQuery -->
+            <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+            <script type="text/javascript" src="lib/bootstrap/bootstrap.min.js"></script>
+            <!-- Load the Crafty Library -->
+            <!-- http://craftyjs.com/release/0.5.2/crafty.js -->
+            <script type="text/javascript" src=" http://craftyjs.com/release/0.5.3/crafty-min.js"></script>
+            <!-- Load any custom prototypes -->
+            <script type="text/javascript" src="prototypes/line.js"></script>
+            <script type="text/javascript" src="prototypes/lightningbolt.js"></script>
+            <!-- Initialise -->
+            <script type="text/javascript" src="init/init.js"></script>
+            <!-- Load the custom components -->
+            <script type="text/javascript" src="components/targetmovementcontrols.js"></script>
+            <script type="text/javascript" src="components/targetingcomponent.js"></script>
+            <script type="text/javascript" src="components/lightningboltcomponent.js"></script>
+            <script type="text/javascript" src="components/blink.js"></script>
+            <!-- Load the scenes -->
+            <script type="text/javascript" src="scenes/level.js"></script>
+            <script type="text/javascript" src="scenes/loading.js"></script>
+            <script type="text/javascript" src="scenes/start.js"></script>
+            <script type="text/javascript" src="scenes/levelend.js"></script>
+            <script type="text/javascript" src="scenes/victorious.js"></script>
+
+            <!-- Start The Game -->
+        </footer>
+    </div>
 </body>
 </html>

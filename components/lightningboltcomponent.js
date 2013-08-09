@@ -26,7 +26,7 @@ Crafty.c("LightningBolt", {
             this.bind('Draw', function(obj) {
                 this._lightningBolt.update();
                 this._lightningBolt.draw(obj.ctx);
-                this.tween({alpha: 0.00});
+                this.tween({alpha: 0.0});
             });
 
             this.bind("EnterFrame", function(e) {
